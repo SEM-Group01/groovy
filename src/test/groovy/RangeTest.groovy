@@ -75,7 +75,7 @@ class RangeTest extends GroovyTestCase {
 
         x = 0
         (1<..<10).each {
-            x = x + i
+            x = x + it
         }
         assert x == 44
     }
