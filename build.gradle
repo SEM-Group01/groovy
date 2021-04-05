@@ -262,7 +262,11 @@ sonarqube {
         property "sonar.projectKey", "SEM-Group01_groovy"
         property "sonar.organization", "sem-group01"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.cpd.exclusions", "**/*"
+        property "sonar.sources", "src/main"
+        property "sonar.tests", "src/test"
+        property "sonar.test.inclusions", "src/test/**"
+        property "sonar.exclusions", "src/test/**"
+        //property "sonar.cpd.exclusions", "**/*"
 //        property "sonar.coverage.jacoco.xmlReportPaths", "${rootProject.buildDir}/reports/jacoco/jacocoAllReport/jacocoAllReport.xml"
     }
 }
